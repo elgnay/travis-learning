@@ -9,6 +9,7 @@ import (
 
 var _ = Describe("Hello", func() {
 	It("Should output hello world", func() {
+		Expect(Hello()).ShouldNot(BeZero())
 		Expect(Hello()).Should(Equal("Hello, world."))
 	})
 })
